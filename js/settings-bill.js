@@ -59,7 +59,7 @@ function levelSetting (totalSettingCost){
 
         if(totalSettingCost>= warningLevel && totalSettingCost < criticalLevel) {
             totalSettingsElement.classList.add('warning');
-        } else if (totalSettingCost === criticalLevel){
+        } else if (totalSettingCost >= criticalLevel){
             totalSettingsElement.classList.add('danger');
         }
 }
